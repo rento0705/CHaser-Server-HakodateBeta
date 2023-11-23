@@ -9,7 +9,7 @@
 
 Releacesからダウンロード後、launch.batまたはlaunch.shでサーバを起動できます。  
 
-+共通
++ 共通
 共通でpygameを利用します。
 pip等でpygameをインストールしてください。
 
