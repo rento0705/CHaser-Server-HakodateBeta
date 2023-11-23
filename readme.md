@@ -9,6 +9,10 @@
 
 Releacesからダウンロード後、launch.batまたはlaunch.shでサーバを起動できます。  
 
++共通
+共通でpygameを利用します。
+pip等でpygameをインストールしてください。
+
 + Windows版  
 python3.11.3で動作確認をしました。  
 + Linux&Mac版  
