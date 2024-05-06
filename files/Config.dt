@@ -1,13 +1,13 @@
 {
     "CoolPort": 2009,
     "HotPort": 2010,
-    "GameSpeed": 200,
+    "GameSpeed": 500,
     "TimeOut": 2000,
-    "HotMode": "Bot",
-    "CoolMode": "Bot",
+    "HotMode": "User",
+    "CoolMode": "User",
     "LogPath": "./log",
     "StagePath": "./maps/",
-    "NextMap": "\u30dc\u30c3\u30c8\u5bfe\u6226",
+    "NextMap": "Blank",
     "Score": false,
     "Log": false
 }

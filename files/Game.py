@@ -316,8 +316,9 @@ class Game:
                 d[cl] = -1
                 d[self.inverse_client(cl)] = 1
 
-        self.log.append("ITEM")
+        self.log.append("ITEM・POINT")
         self.log.append(f"Cool: {self.cool_items}")
+        self.log.append("-----------------------")
         self.log.append(f"Hot: {self.hot_items}")
         self.log.append("POINT")
         self.log.append(f'Cool: {self.cool_items * 3 + d["Cool"] * left_turn}')

@@ -12,26 +12,25 @@ class ReadConfig:
             with open("Config.dt", mode="r", encoding="utf-8") as f:
                 self.d = json.load(f)
         except FileNotFoundError:
-            self.reset(True)
+            self.reset()
 
     def save(self):
         with open("Config.dt", "w") as f:
             json.dump(self.d, f, indent=4)
 
-    def reset(self, f=False):
+    def reset(self):
         with open("Config.dt", mode="w", encoding="utf-8") as f:
             self.d = {
+                "CoolPort": 2009,
+                "HotPort": 2010,
                 "GameSpeed": 500,
                 "TimeOut": 2000,
+                "HotMode": "User",
+                "CoolMode": "User",
                 "LogPath": "./log",
                 "StagePath": "./maps/",
                 "NextMap": "Blank",
                 "Score": False,
                 "Log": False,
             }
-            if f:
-                self.d["CoolPort"] = 2009
-                self.d["HotPort"] = 2010
-                self.d["HotMode"] = "User"
-                self.d["CoolMode"] = "User"
             json.dump(self.d, f, indent=4)

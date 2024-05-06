@@ -1,1 +1,1 @@
-start python files/main.py
+start py files/main.py
